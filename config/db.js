@@ -4,7 +4,7 @@ dotenv.config({ path: './.env' });
 
 const connectDB = async () => {
   try {
-    await mongoose.connect("mongodb://localhost:27017/url", {
+    await mongoose.connect("mongodb+srv://temploginoffice:btCJXCYZH0kJa9ew@cluster0.hytfw.mongodb.net/?retryWrites=true&w=majority", {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
